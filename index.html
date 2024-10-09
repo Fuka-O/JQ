@@ -96,14 +96,14 @@
               $('.start-button').text('もう一度占う！');
               $('.start-button').toggleClass('js-fortune-start');
               $('.start-button').toggleClass('agein');
-            }
-            $(document).on('click', '.agein', function(){
-            $('.result').fadeOut(1000);
-            $('.start-button').text('運勢を占う!');
-            $('.start-button').toggleClass('js-fortune-start');
-            $('.start-button').toggleClass('agein');
-          })
-        })
+          }
+        });
+        $(document).on('click', '.agein', function(){
+          $('.result').fadeOut(1000);
+          $('.start-button').text('運勢を占う!');
+          $('.start-button').toggleClass('js-fortune-start');
+          $('.start-button').toggleClass('agein');
+        });
       });
     </script>
   </body>
